@@ -12,8 +12,18 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
-
+    color:white;
+}
+.btn-gubbe {
+    background-color: #6663F1;
+    border-radius: 12px;
+    padding: 10px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-gubbe i {
+    margin-right: 10px;
 }
 
 
