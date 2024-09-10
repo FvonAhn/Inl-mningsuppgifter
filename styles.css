@@ -8,6 +8,13 @@ body {
     font-family: Manrope;
     color:white;
     background-color: #33354D;
+    margin-left: 312px;
+    margin-right: 312px;
+}
+.top-of-page {
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
 }
 
 a {
