@@ -16,15 +16,17 @@
 body {
     font-family: Manrope;
     color: var(--_clr-white);
-    background-color: var(--_clr-bkg1);
-    margin-left: 312px;
-    margin-right: 312px;
 }
-.top-of-page-1 {
-    margin-top: 1rem;
-    max-width: 1292px;
+#first-page {
+    background-color: var(--_clr-bkg1)    
+}
+.toppen {
+    padding-top: 1rem;
+    padding-left: 20%;
+    padding-right: 20%;
     gap:2rem;
-    display: flex;
+    display: grid;
+    grid-template-columns:auto 1fr auto auto;
     justify-content: center;
     align-items: center;
 }
@@ -107,21 +109,78 @@ input:checked + .slider:before {
 .btn-gubbe i {
     margin-right: 10px;
 }
-.discover-knapp {
-    margin-top: 5rem;
+
+.bottom-of-page-1 {
+    padding-top: 5rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "discover phones"
+                         "headline phones"
+                         "text phones";
+    /* justify-content: center;
+    align-items: center; */
+}
+.headline {
+    font-size: 2.4rem;
+    font-weight: 900;
+    grid-area: headline;
+    text-align: left;
+}
+.text-knappar {
+    grid-area: text;
+    text-align: left;
+}
+.phones {
+    grid-area: phones
+}
+.discover {
+    grid-area: discover
 }
 .discover-text {
     margin-left: 0.5rem;
 }
-.bottom-of-page-1 {
+.text-knapper {
 
 }
-.headline {
-
+.btn-apple {
+    background-color: #6663F1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "apple download"
+                        "apple appstore";
+    border-radius: 8px;
+    padding: 0.2rem
 }
-.bread {
-
+.btn-text {
+    color: var(--_clr-bkg1);
+    display: flex;
+    flex-direction: column;
 }
-.phones {
-
+.btn-apple {
+    display: flex;
+    justify-content: center;
+}
+.btn-google {
+    background-color: #6663F1;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 0.2rem
+}
+.btn-text {
+    color: var(--_clr-bkg1);
+    display: flex;
+    flex-direction: column;
+}
+.getit {
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+.googleplay {
+    font-size: 1rem;
+    font-weight: 900;
 }
