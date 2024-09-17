@@ -262,6 +262,13 @@ input:checked + .slider:before {
 #fourth-page {
     background-color: var(--_clr-bkg2)
 }
+.page-four {
+
+}
+.money {
+    display: flex;
+    flex-direction: column;
+}
 .transfer-text {
     font-size: 1.5rem;
     font-weight: 600;
