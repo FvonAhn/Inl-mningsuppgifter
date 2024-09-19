@@ -367,14 +367,22 @@ input:checked + .slider:before {
 #sixth-page {
     background-color: var(--_clr-bkg2)
 }
-.top-left {
-
+.top-left   {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 .text-faqs {
     font-size: 2rem;
     font-weight: 900;
 }
+.text-in-touch {
+    font-size: 1.3rem;
+    font-weight: 100;
+    max-width: 30rem;
+}
 .call-text-us {
+    font-weight: 100;
     display:flex;
     gap: 2rem;
 }
@@ -409,4 +417,20 @@ input:checked + .slider:before {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+.the-faqs {
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.question {
+    display: flex;
+    align-items: center;
+    background-color: #33354D;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.arrow-up {
+    color: #6663F1;
 }
