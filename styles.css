@@ -474,6 +474,7 @@ input:checked + .slider:before {
 .input-email {
     color: var(--_clr-white);
     background-color: var(--_clr-bkg1);
+    width: 20rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -486,8 +487,8 @@ input:checked + .slider:before {
     border-bottom-right-radius: 10px;
 }
 .tothetop {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -495,7 +496,7 @@ input:checked + .slider:before {
     font-size: 12px;
 }
 .my-mark {
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     display: flex;
     align-items: center;
