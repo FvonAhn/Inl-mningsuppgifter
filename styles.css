@@ -367,10 +367,20 @@ input:checked + .slider:before {
 #sixth-page {
     background-color: var(--_clr-bkg2)
 }
+.page-six {
+    padding-top: 5rem;
+    padding-right: 17%;
+    padding-left: 17%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left faqs"
+                        "bottom bottom";
+}
 .top-left   {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    grid-area: left;
 }
 .text-faqs {
     font-size: 2rem;
@@ -422,23 +432,47 @@ input:checked + .slider:before {
     display:flex;
     flex-direction: column;
     gap: 0.5rem;
+    grid-area: faqs;
 }
 .question {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: #33354D;
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 1rem;
+    max-width: 46.5rem;
+    grid-area: question;
 }
-.arrow-up {
-    color: #6663F1;
+.bottom-of-page-6 {
+    margin-top: 5rem;
+    padding: 4rem 2rem;
+    display: flex;
+    gap:10rem;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #33354D;
+    grid-area: bottom;
+}
+.sub-bell {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.sub-text {
+    font-size: 1.4rem;
+    font-weight: 900;
+    max-width: 26rem;
 }
 .sub-form {
     display: flex;
 }
 .input-email {
-    border: solid 1px;
+    color: var(--_clr-white);
     background-color: var(--_clr-bkg1);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -446,16 +480,26 @@ input:checked + .slider:before {
 .btn-sub {
     color: var(--_clr-white);
     background-color: var(--_clr-primary);
+    border:none;
     padding: 0.2rem 1rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.bottom-of-page-6 {
+.tothetop {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
-    gap: 2rem;
-    border: none;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    background-color: #33354D;
+    font-weight: 100;
+    font-size: 12px;
+}
+.my-mark {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 12px;
 }
