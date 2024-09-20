@@ -434,3 +434,19 @@ input:checked + .slider:before {
 .arrow-up {
     color: #6663F1;
 }
+.sub-form {
+    display: flex;
+}
+.input-email {
+    border: solid 1px;
+    background-color: var(--_clr-bkg1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.btn-sub {
+    color: var(--_clr-white);
+    background-color: var(--_clr-primary);
+    padding: 0.2rem 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
