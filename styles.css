@@ -529,3 +529,48 @@ input:checked + .slider:before {
 .question:hover {
     background-color: #565c92;
 }
+.testknapp {
+    color: var(--_clr-white);
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #33354D;
+    cursor: pointer;
+    border: none;
+    gap:10rem;
+    border-radius: 10px;
+    padding: 10px 1rem;
+    max-width: 46.5rem;
+}
+.testknapp:hover {
+    background-color: #6c71a5;
+}
+.active {
+    background-color: #6c71a5;
+    border:solid 1px white;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    img {
+        transform: rotate(180deg);
+    }
+}
+.testsvar {
+    padding: 0 1rem;
+    background-color: #6c71a5;
+    max-height: 0;
+    border: solid 1px white;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 37.36rem;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.testknapp:after {
+    img {
+        transform: rotate(180deg);
+    }
+}

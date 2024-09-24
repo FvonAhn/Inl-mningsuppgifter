@@ -162,22 +162,22 @@
                 </div>
                 <p class="text-in-touch">Still have unanswered questions and need to get in touch</p>
                 <div class="call-text-us">
-                    <div class="call">
+                    <a href="#" class="call">
                         <img src="/images/icon-telephone.svg">
                         <p>still have questions?</p>
-                        <a href="#" class="contact-us-1">
+                        <div class="contact-us-1">
                             <p>Contact us</p>
                             <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="sms">
+                        </div>
+                    </a>
+                    <a href="#" class="sms">
                         <img src="/images/icon-bubble.svg">
                         <p>Don't like phone calls?</p>
-                        <a href="#" class="contact-us-2">
+                        <div class="contact-us-2">
                             <p>Contact us</p>
                             <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="the-faqs">
@@ -222,6 +222,28 @@
         </div>
         <a href="#first-page" class="tothetop">Top of page</a>
         <p class="my-mark">© 2024 Silicon. All Rights Reserved. Made by FvA. Credit to Madras.</p>
+    </section>
+    <section id="testställe">
+        <button typ="button" class="testknapp">Is any of my personal information stored in the app?<img src="/images/arrow-down.svg"></button>
+        <div class="testsvar">
+            <p>Yes it is! And we will sell it to all Chinese brands for a hefty sum, and there is nothing you can do about it!</p>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("testknapp");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                }
+              });
+            }
+            </script>
     </section>
 </body>
 </html>
