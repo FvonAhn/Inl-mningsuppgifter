@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 :root{
+    
+    /*sektionsfärgerna kommenteras ut när allt är klart*/
     --_clr-primary:#6663F1;
-    --_clr-bkg1:#33354D;
-    --_clr-bkg2:#0B0F19;
+    --_clr-bkg1:#33354D; /* sektionsfärg */
+    --_clr-bkg2:#0B0F19; /* sektionsfärg */
     --_clr-black:black;
     --_clr-white:white;
     --_clr-green:#22C55E;
@@ -19,9 +21,12 @@
 body {
     font-family: Manrope;
     color: var(--_clr-white);
+    background: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%), #0b0f19;
 }
 #first-page {
-    background-color: var(--_clr-bkg1)    
+    /* Satte bakgrundsfärger på varje sektion för att lättare kunna se
+    vart allt börjar och slutar för varje del. */
+    /* background-color: var(--_clr-bkg1); */
 }
 .toppen {
     padding-top: 1rem;
@@ -185,7 +190,7 @@ input:checked + .slider:before {
     margin-left: 0.5rem;
 }
 #second-page {
-    background-color: var(--_clr-bkg2)
+    /* background-color: var(--_clr-bkg2) */ 
 }
 .logos {
     /* max-width: 1320px; */
@@ -238,7 +243,7 @@ input:checked + .slider:before {
     grid-template-columns: 1fr 1fr;
 }
 #third-page {
-    background-color: var(--_clr-bkg1)
+    /* background-color: var(--_clr-bkg1) */
 }
 .how-text {
     padding-top: 5rem;
@@ -273,7 +278,7 @@ input:checked + .slider:before {
     text-align: center;
 }
 #fourth-page {
-    background-color: var(--_clr-bkg2)
+    /* background-color: var(--_clr-bkg2) */
 }
 .page-four {
     padding-top: 5rem;
@@ -363,7 +368,7 @@ input:checked + .slider:before {
     grid-area: lm;
 }
 #fifth-page {
-    background-color: var(--_clr-bkg1)
+    /* background-color: var(--_clr-bkg1) */
 }
 .testimonials {
     padding-top: 5rem;
@@ -381,7 +386,7 @@ input:checked + .slider:before {
     text-align: left;
 }
 #sixth-page {
-    background-color: var(--_clr-bkg2)
+    /* background-color: var(--_clr-bkg2) */
 }
 .page-six {
     padding-top: 5rem;
@@ -413,7 +418,7 @@ input:checked + .slider:before {
     gap: 2rem;
 }
 .call {
-    border: 1px solid var(--_clr-white);
+    border: 1px solid  rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     max-width: 15rem;
     padding: 2rem;
@@ -426,7 +431,7 @@ input:checked + .slider:before {
     background-color: #33354D;
 }
 .sms {
-    border: 1px solid var(--_clr-white);
+    border: 1px solid  rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     max-width: 15rem;
     padding: 2rem;
