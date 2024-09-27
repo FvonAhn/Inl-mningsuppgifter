@@ -49,7 +49,6 @@ a {
 a:hover {
     color: rgb(211, 211, 211);
 }
-
 .switch {
     --_w: 40px;
     --_h: 20px;
@@ -61,6 +60,7 @@ a:hover {
     height: var(--_h);
 }
 .Label {
+    color: rgba(255, 255, 255, 0.5);
     margin-right: 10px;
 }
 .switch input {
@@ -105,8 +105,7 @@ input:checked + .slider:before {
 }
 .slider.round {
     border-radius: 10px;
-}
-  
+}  
 .slider.round:before {
     border-radius: 10px;
 }
@@ -476,6 +475,36 @@ input:checked + .slider:before {
 .question:hover {
     background-color: #565c92;
 }
+.question-w-answer {
+    background-color: rgb(51, 53, 77, 0.5);
+    border-radius: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    padding: 10px 1rem;
+    max-width: 46.5rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        transform: rotate(180deg);
+    }
+}
+.q-text-arrow {
+    padding-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.q-answer {
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+.arrow-up {
+    background: rgba(102, 99, 241, 0.8);
+    border-radius: 20px;
+}
+.question-w-answer:hover {
+    background-color: #565c92;
+}
 .bottom-of-page-6 {
     margin-top: 5rem;
     padding: 4rem 2rem;
@@ -553,37 +582,4 @@ input:checked + .slider:before {
 }
 #testställe {
     background-color: #0B0F19;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-.testknapp {
-    color: var(--_clr-white);
-    font-size: 1rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #33354D;
-    cursor: pointer;
-    border: none;
-    gap:10rem;
-    border-radius: 10px;
-    padding: 10px 1rem;
-    max-width: 46.5rem;
-}
-.testknapp:hover {
-    background-color: #6c71a5;
-}
-.active {
-    background-color: #6c71a5;
-}
-.testsvar {
-    padding: 0.5rem 1rem;
-    background-color: #6c71a5;
-    border-top: none;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    max-width: 37.36rem;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
 }

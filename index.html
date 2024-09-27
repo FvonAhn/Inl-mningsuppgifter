@@ -24,7 +24,7 @@
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
-                    <a href="#" class="btn-gubbe">
+                    <a href="#" onclick="openPopup()" class="btn-gubbe">
                         <i class="fa-regular fa-user"></i>
                         <span>Sign in / up</span>
                     </a>
@@ -38,10 +38,10 @@
                 <p class="bread">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
                 <div class="downloads">
                     <div class="btn-apple">
-                        <a href="#"><img src="/images/applelogo.svg"></a>
+                        <a href="#" onclick="openPopup()"><img src="/images/applelogo.svg"></a>
                     </div>
                     <div class="btn-google">
-                        <a href="#"><img src="/images/gplaylogo.svg"></a>
+                        <a href="#" onclick="openPopup()"><img src="/images/gplaylogo.svg"></a>
                     </div>         
                 </div>
                 <nav class="discover">
@@ -109,7 +109,7 @@
                 <p class="banking-text"><img src="/images/check-circle.svg">Banking transactions are free for you</p>
                 <p class="monthly-text"><img src="/images/check-circle.svg">No monthly cash commission</p>
                 <p class="manage-text"><img src="/images/check-circle.svg">Manage payments and transactions online</p>
-                <a href="#" class="btn-learn-more">
+                <a href="#" onclick="openPopup()" class="btn-learn-more">
                     <span class="lm">Learn More</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -138,7 +138,7 @@
                     <p>quam mauris.</p>
                 </div>
                 <div class="btn-lm-2">
-                    <a href="#" class="btn-learn-more">
+                    <a href="#" onclick="openPopup()" class="btn-learn-more">
                         <span class="lm">Learn More</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -189,9 +189,12 @@
                     <p class="q-text">What formats can I download my transaction history in?</p>                
                     <img src="/images/arrow-down.svg" class="arrow-down">            
                 </a>
-                <a href="#" class="question">
-                    <p class="q-text">Can I schedule future transactions?</p>                
-                    <img src="/images/arrow-down.svg" class="arrow-down">          
+                <a href="#" class="question-w-answer">
+                    <div class="q-text-arrow">
+                        <p class="q-text">Can I schedule future transactions?</p>
+                        <img src="/images/arrow-down.svg" class="arrow-up"> 
+                    </div>
+                    <p class="q-answer">Yes you can! But if you do, you will notice that we allways taka a fee between 10 to 100$ depending on the size of the transaction taking place. And that even counts for smaller transactions than 10$. But it is a piece of cake to schedule. Just go to the tab that says "Schedule transaction" and pick a date, then pick from what account you want to withdraw from. </p>
                 </a>
                 <a href="#" class="question">
                     <p class="q-text">When can I use Banking App services</p>                
@@ -225,23 +228,9 @@
         <p class="my-mark">© 2024 Silicon. All Rights Reserved. Made by FvA. Credit to Madras.</p>
     </section>
     <section id="testställe">
-        <button class="testknapp" onclick="toggleContent()">Is any of my personal information stored in the app?<img src="/images/arrow-down.svg"></button>
-        <div id="test-svar" class="testsvar">
-            <p>Yes it is! And we will sell it to all Chinese brands for a hefty sum, and there is nothing you can do about it!</p>
-        </div>
         <script>
-            function toggleContent () {
-                var content = document.getElementById("test-svar");
-                var button = document.getElementsByClass("testknapp");
-
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                    button.classList.remove("active");
-                }
-                else {
-                    content.style.display = "block";
-                    button.classList.add("active");
-                }
+            function openPopup() {
+                window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "popupWindow", "width=600, height=400, scrollbars=yes");
             }
         </script>
     </section>
