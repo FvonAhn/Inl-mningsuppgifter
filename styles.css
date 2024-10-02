@@ -584,3 +584,30 @@ input:checked + .slider:before {
 /* #rickrolled {
     background-color: #0B0F19;
 } */
+.quote-container {
+    display: flex;
+    gap: 2rem;
+}
+.quotes {
+    background-color: rgb(51, 53, 77, 0.5);
+    border-radius: 10px;
+    max-width: 416px;
+    display: grid;
+    padding: 2rem 3rem 2rem 2.2rem;
+    gap: 1.5rem;
+}
+.dubbelsnuttar {
+    margin-top: -3.5rem;
+    margin-left: -0.6rem;
+}
+.quote-text {
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+.rating {
+    margin-left: 0;
+}
+.twoclients {
+    display: flex;
+    gap: 1rem;
+}
